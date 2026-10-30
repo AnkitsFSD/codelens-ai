@@ -62,7 +62,7 @@ function App() {
     setReview(null);
 
     try {
-      const response = await fetch("https://codelens-ai-fnlw.onrender.com/review",{
+      const response = await fetch("https://codelens-ai-fnlw.onrender.com/review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code, language }),
